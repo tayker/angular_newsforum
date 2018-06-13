@@ -1,0 +1,25 @@
+<ng-container [ngSwitch]="item.type">
+    <li *ngSwitchCase="'text-only'" class="list__item">
+        <h2 class="title">
+            {{item.title}}
+        </h2>
+        <div class="description">
+            {{item.description}}
+        </div>
+        <app-user-activity [favorites]="item.favorites"
+        [id]="item.id"
+        (updateFavorite)="updateFavorite($event)"></app-user-activity>
+    </li>
+    <li *ngSwitchCase="'text-img'" class="list__item">
+        <h2 class="title">
+            {{item.title}}
+        </h2>
+        <img src="{{item.img}}" alt="">
+        <div class="description">
+            {{item.description}}
+        </div>
+        <app-user-activity [favorites]="item.favorites"
+        [id]="item.id"
+        (updateFavorite)="updateFavorite($event)"></app-user-activity>
+    </li>
+</ng-container>

@@ -1,0 +1,7 @@
+<h1>
+    News Forum
+</h1>
+   <ul class="list">
+    <app-news-item *ngFor="let item of news" [item]="item"
+    (favorite)="favorite($event)"></app-news-item>
+</ul>

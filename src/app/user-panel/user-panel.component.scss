@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter:400,700');
+.container{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px;
+    .nav{
+        a{
+            color: #ff4c4c;
+            font-size: 22px;
+            text-decoration: none;
+            font-family: 'Bitter', serif;
+            font-weight: bold;
+            &:hover{
+                color: #be0027;
+            }
+            &:not(:last-child){
+                margin-right: 20px;
+            }
+        }
+    }
+    .user{
+        &-login{
+            font-size: 30px;
+            color: #ff4c4c;
+            font-family: 'Bitter', serif;
+        }
+    }
+}

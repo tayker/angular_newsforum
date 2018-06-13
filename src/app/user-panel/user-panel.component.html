@@ -1,0 +1,15 @@
+<div class="container">
+    <nav class="nav" *ngIf="!isLogged">
+        <a routerLink="/login">
+            Login
+        </a>
+        <a routerLink="/registration">
+            Registration
+        </a>
+    </nav>
+    <div class="user-panel" *ngIf="isLogged">
+        <div class="user-login">
+            {{userLogin}}
+        </div>
+    </div>
+</div>

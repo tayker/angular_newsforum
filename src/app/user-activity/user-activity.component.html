@@ -1,0 +1,8 @@
+<button mat-icon-button color="warn" *ngIf="favorites"
+   (click)="onUpdateFavorite(id)">
+    <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+</button>
+<button mat-icon-button color="primary" *ngIf="!favorites"
+   (click)="onUpdateFavorite(id)">
+    <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+</button>

@@ -1,0 +1,11 @@
+<form>
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="Login" [(ngModel)]="userLogin" name="login">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="Password" [(ngModel)]="userPassword" name="password">
+    </mat-form-field>
+    <mat-checkbox [(ngModel)]="userRemember" name="checkout">Remember me</mat-checkbox>
+    <button mat-raised-button color="primary"
+    (click)="login(userLogin, userPassword, userRemember); $event.preventDefault()">Login</button>
+</form>
